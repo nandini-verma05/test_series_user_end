@@ -1,0 +1,193 @@
+.test-instructions-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem 2rem; /* More padding for instructions */
+  max-width: 600px;
+  margin: 2rem auto; /* Center the card with some margin */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: sans-serif;
+}
+
+.test-category {
+  display: inline-block;
+  background-color: #e3f2fd; /* Light blue background */
+  color: #1e88e5; /* Blue text */
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.test-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.test-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.detail-icon {
+  color: #3f51b5; /* Icon color - Indigo */
+  margin-right: 0.6rem;
+  font-size: 1.2em; /* Make icon slightly larger */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.detail-item strong {
+  color: #333;
+  margin-right: 0.4rem;
+}
+
+.test-rules {
+  margin-bottom: 2rem;
+}
+
+.test-rules h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.test-rules h4 svg { /* Style icon in heading */
+  margin-right: 0.5rem;
+  color: #555;
+}
+
+
+.test-rules ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0.5rem;
+}
+
+.test-rules li {
+  margin-bottom: 0.6rem;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.5rem; /* Space for custom bullet */
+}
+
+/* Custom list bullet */
+.test-rules li::before {
+  content: '•'; /* Bullet character */
+  color: #3f51b5; /* Bullet color */
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2em; /* Size of the bullet */
+}
+
+
+.start-test-button {
+  display: inline-flex; /* Use flex to align icon and text */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Space between icon and text */
+  background-color: #4CAF50; /* Green color for start */
+  color: #ffffff;
+  padding: 0.8rem 2rem; /* Larger padding for emphasis */
+  border-radius: 25px; /* Rounded corners */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(76, 175, 80, 0.4);
+  transition: background-color 0.2s ease-out, transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  width: 100%; /* Make button full width of its container */
+  max-width: 250px; /* Optional: Max width for the button */
+  margin: 0 auto; /* Center the button if max-width is set */
+}
+
+
+.start-test-button:hover,
+.start-test-button:focus {
+  background-color: #388E3C; /* Darker green on hover/focus */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(56, 142, 60, 0.5);
+  outline: none;
+}
+
+.start-test-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(76, 175, 80, 0.4);
+}
+
+.start-test-button:focus-visible {
+    outline: 2px solid #66bb6a; /* Lighter green outline */
+    outline-offset: 2px;
+}
+
+/* Ensure button icon size is consistent */
+.start-test-button svg {
+    font-size: 1.1em;
+}
+
+.syllabus-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(76, 175, 80, 0.4);
+  transition: background-color 0.2s ease-out, transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.syllabus-button:hover,
+.syllabus-button:focus {
+  background-color: #388E3C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(56, 142, 60, 0.5);
+  outline: none;
+}
+
+.syllabus-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(76, 175, 80, 0.4);
+}
+
+.syllabus-button:focus-visible {
+    outline: 2px solid #66bb6a;
+    outline-offset: 2px;
+}
+
+.syllabus-button svg {
+    font-size: 1.1em;
+}
